@@ -1,0 +1,27 @@
+.banner{
+    background-image: url("../images/nen-san-pham.png");
+    background-size: cover;
+    height: 25vw;
+}
+.banner h1{
+    color: rgb(249, 226, 230);    
+    font-family: 'Dancing Script', cursive;
+    font-weight: 800;
+}
+.banner a{
+    text-decoration: none;
+    font-size: 85%;
+}
+.banner .text{
+    font-size:  85%;
+    color: rgb(249, 226, 230);
+}
+.ngach::before{
+    content: "|";
+}
+.ngach{
+    display: inline-block;
+    margin: 0 1em;
+    text-align: center;
+    color: rgb(249, 226, 230);
+}

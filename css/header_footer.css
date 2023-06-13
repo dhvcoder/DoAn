@@ -1,0 +1,19 @@
+header div.container-fluid a.navbar-brand{
+   font-weight: 700;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+header div#navbarNavDropdown ul li a:hover{
+   color: rgb(249, 226, 195);
+   background-color: rgb(69, 87, 69);
+   border-radius: 10px;
+}
+
+header .dropdown-menu li a{
+   color: #fff;
+}
+
+
+footer p:hover{
+   margin-left: 10px;
+   transition: 0.7s;
+}

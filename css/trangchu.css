@@ -1,0 +1,110 @@
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    /* remove the gap so it doesn't close */  
+}
+.hidden{
+    display: none;
+}
+
+.shopnow{   
+    height: 40vw;
+    background-image: url("../images/imgshopnow1.png");
+    background-size: cover;
+}
+.shopnow button{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 2px solid;
+    color: rgb(131, 6, 6);
+    font-weight: bold;
+}
+.shopnow button:hover{
+    background-color: rgb(170, 58, 58);
+    color: antiquewhite;
+}
+main div.container-fluid h1{
+    font-weight: 800;
+    font-family: 'Dancing Script', cursive;
+    color: rgb(131, 6, 6);
+}
+main div.container-fluid h6{
+    font-weight: 800;
+    font-family: 'Courier New', Courier, monospace;
+    color:  rgb(107, 104, 104);;
+}
+
+.sanpham-noibat button{
+    width: 150px;
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 2px solid;
+    color: rgb(131, 6, 6);
+    font-weight: bold;
+}
+.sanpham-noibat button:hover{
+    background-color: rgb(170, 58, 58);
+    color: antiquewhite;
+}
+
+.sanpham-noibat h4{
+    font-weight: 800;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(131, 6, 6);
+}
+
+.gioithieuchung{
+    height: 920px;
+    background-image: url("../images/bg-img-fl.jpg");
+    background-size: cover;
+}
+.gioithieuchung button{
+    border: 0;
+    color: white;
+    width: 50%;
+    height: 70px;
+}
+.sanpham-noibat img:hover{
+    opacity: 75%; 
+}
+
+.lien-he b{
+    font-family: 'Courgette', cursive;
+    font-weight: 100;
+}
+
+/* LSLIDER */
+.swiper h1{
+    font-weight: 800;
+    font-family: 'Dancing Script', cursive;
+    color: rgb(131, 6, 6);
+}
+
+.card-img-top{
+    border-radius: 50px;
+    padding: 20px;
+}
+.card{
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    margin: 0 2rem;
+}
+.card-body{
+    padding: 25px;
+    margin-top: -15px;
+}
+.btn-dark{
+    border-radius: 50px;
+    width: 120px;
+}
+.btn-dark:hover{
+    background-color: #FEA1A1;
+    border: none;
+}
+h4,h5{
+    color: #FEA1A1;
+}
+
+.swiper-button-next::after {
+    --swiper-theme-color: #b71515;
+}
+/* LSLIDER */

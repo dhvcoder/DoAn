@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FLOWER</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/trangchu.css">
+    <link rel="stylesheet" href="css/header_footer.css">
+    <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    
+ </head>
+<body>
+    <!-- HEADER -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success px-4">
+            <div class="container-fluid text-center">
+                <a class="navbar-brand fs-4"
+                   href="#">BLOSOM</a>
+                <div class="mb-2 ms-2 me-2 ic-cart">
+                    <i class="bi bi-bag-dash text-white fs-3 me-4"
+                       data-bs-toggle="modal"
+                       data-bs-target="#exampleModal"
+                       style="color: #fff;"></i>
+                </div>
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse menu "
+                     id="navbarNavDropdown">
+
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active menu1"
+                               href="trangchu.html">TRANG CHỦ</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle"
+                               href="#"
+                               id="dropdownMenuButton"
+                               role="button"
+                               data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                SẢN PHẨM
+                            </a>
+                            <ul class="dropdown-menu bg-success"
+                                aria-labelledby="dropdownMenuButton">
+                                <li><a class="dropdown-item"
+                                       href="sanpham.html">HOA BÓ</a></li>
+                                <li><a class="dropdown-item"
+                                       href="sanpham_hoakhaitruong.html">HOA KHAI TRƯƠNG</a></li>
+                                <li><a class="dropdown-item"
+                                       href="sanpham_hoachiabuon.html">HOA CHIA BUỒN</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active menu1"
+                               href="lienhe.html">LIÊN HỆ</a>
+                        </li>
+                        <li class="nav-item btn-register">
+                            <a class="nav-link active menu1"
+                               href="dangky.html">ĐĂNG KÝ</a>
+                        </li>
+                    </ul>
+                    <a href="dangnhap.html"
+                       class="btn-login">
+                        <button type="button"
+                                class="btn btn-outline-light ms-1">ĐĂNG NHẬP</button>
+                    </a>
+                    <a href="dangnhap.html"
+                       onclick="handleLogout()"
+                       class="btn-logout">
+                        <button type="button"
+                                class="btn btn-outline-light ms-1">ĐĂNG XUẤT</button>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--LAST HEADER -->
+    
+    <!-- SHOP-NOW -->
+    <div class="shopnow d-flex align-items-center justify-content-center w-100 mb-5">
+        <a href="sanpham.html"><button class="btn">MUA NGAY</button></a>
+    </div>
+    <!--LAST SHOP-NOW -->
+    
+    <!-- MAIN -->
+    <main>
+      <div class="container-fluid text-center pt-5 mx-auto">
+         <h1>Sản Phẩm Nổi Bật</h1>
+         <h6 class="text-uppercase text-noibat">Một loài hoa dại vẫn có thể rung rinh rực rỡ trước nắng chiều theo cách tự nhiên của nó</h6>
+         <img src="images/vjp.png" alt="" class="w-auto mb-5" >
+      </div>
+     
+      <!-- SAN PHAM NOI BAT -->
+      <div class="sanpham-noibat mx-5">
+        <div class= "row">
+            <div class ="col-12 col-md-4 text-center">
+              <a href=""><img src="images/noibat1.jpg" alt="" class="w-100" style="height: auto;"></a>
+              <h4 class="text-center mt-4">Hoa Trái Tim</h4>  
+              <button class="btn navbar-btn mb-5">MUA NGAY</button>
+            </div>
+            <div class ="col-12 col-md-4 text-center">
+                <a href=""><img src="images/noibat2.webp" alt="" class="w-100" style="height: auto;"></a>
+                <h4 class="mt-4">Bó Hoa Hồng Nhũ</h4>
+                <button class="btn navbar-btn mb-5">MUA NGAY</button>
+
+            </div>
+            <div class ="col-12 col-md-4 text-center">
+                <a href=""><img src="images/noibat3.webp" alt="" class="w-100" style="height: auto;"></a>
+                <h4 class="mt-4">Bó Hoa Giấy Nhún</h4>
+                <button class="btn navbar-btn">MUA NGAY</button>
+            </div>
+        </div>
+      </div>
+      <!--LAST SAN PHAM NOI BAT -->
+
+      <!-- DICH VU -->
+      <div class="dichvu mx-5 mb-5 mt-5">
+        <div class="row border border-2 border-success" style="border-radius: 15px;">
+            <div class="col-12 col-md-4 text-center text-white bg-success" style="border-radius: 13px;">
+                <i class="bi bi-truck fs-4"></i>
+                <b class="fs-5" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Miễn phí giao hàng</b>
+                <p class="mt-2">Trị giá đơn hàng trên 500k</p>
+            </div>
+            <div class="col-12 col-md-4 text-center">
+                <i class="bi bi-arrow-counterclockwise fs-4"></i>
+                <b class="fs-5" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Khuyến mãi cửa hàng</b>
+                <p class="mt-2">Trị giá đơn hàng trên 1.000.000đ</p>
+            </div>
+            <div class="col-12 col-md-4 text-center">
+                <i class="bi bi-gift-fill fs-4"></i>
+                <b class="fs-5" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Quà tặng</b>
+                <p class="mt-2">Áp dụng cho khách hàng mua lần đầu tiên tại cửa hàng</p>
+            </div>
+        </div>
+      </div>
+      <!--LAST DICH VU -->
+
+      <!-- SLIDER -->
+     <section style="width: 100%;">
+        <div class=" swiper mySwiper container py-5 mb-5" >
+            <h1 class="text-center">Top 7 Bán Chạy</h1>
+            <div class="swiper-wrapper" >   
+              
+              
+                <div class="swiper-slide card mb-3" style="width: 20rem;">
+               <a href="#"> <img src="images/banchay1.jpg" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <h5 class="card-title">Bó Hoa Giấy - Cưới</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                        dignissimos accusantium amet similique velit iste.</p>
+                </div>
+                <div class="mb-3 d-flex justify-content-around">
+                    <h4>200.000đ</h4>
+                    <button class="btn btn btn-dark">Đặt ngay</button>
+                </div>
+            </div>
+            
+            <div class="swiper-slide card mb-3" style="width: 20rem;">
+               <a href="#"> <img src="images/banchay2.webp" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <h5 class="card-title">Bó Hoa Hồng Trắng</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                        dignissimos accusantium amet similique velit iste.</p>
+                </div>
+                <div class="mb-3 d-flex justify-content-around">
+                    <h4>1.000.000đ</h4>
+                    <button class="btn btn btn-dark">Đặt ngay</button>
+                </div>
+            </div>
+            
+            <div class="swiper-slide card mb-3" style="width: 20rem;">
+               <a href="#"> <img src="images/banchay3.webp" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <h5 class="card-title">Hoa Bó Trái Tim - Lớn</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                        dignissimos accusantium amet similique velit iste.</p>
+                </div>
+                <div class="mb-3 d-flex justify-content-around">
+                    <h4>349.000đ</h4>
+                    <button class="btn btn btn-dark">Đặt ngay</button>
+                </div>
+            </div>
+            
+            <div class="swiper-slide card mb-3" style="width: 20rem;">
+               <a href="#"> <img src="images/banchay4.webp" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <h5 class="card-title">Hoa Cúc Mẫu Đơn</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                        dignissimos accusantium amet similique velit iste.</p>
+                </div>
+                <div class="mb-3 d-flex justify-content-around">
+                    <h4>4.735.000đ</h4>
+                    <button class="btn btn btn-dark">Đặt ngay</button>
+                </div>
+            </div>
+            
+            <div class="swiper-slide card mb-3" style="width: 20rem;">
+               <a href="#"> <img src="images/banchay5.jpg" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <h5 class="card-title">Bó Hoa Sinh Nhật</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                        dignissimos accusantium amet similique velit iste.</p>
+                </div>
+                <div class="mb-3 d-flex justify-content-around">
+                    <h4>1.990.000đ</h4>
+                    <button class="btn btn btn-dark">Đặt ngay</button>
+                </div>
+            </div>
+            
+            <div class="swiper-slide card mb-3" style="width: 20rem;">
+               <a href="#"> <img src="images/banchay6.jpg" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <h5 class="card-title">Hoa Kỉ Niệm - Blink</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                        dignissimos accusantium amet similique velit iste.</p>
+                </div>
+                <div class="mb-3 d-flex justify-content-around">
+                    <h4>2.000.000đ</h4>
+                    <button class="btn btn btn-dark">Đặt ngay</button>
+                </div>
+               </div>
+            
+               <div class="swiper-slide card mb-3" style="width: 20rem;">
+               <a href="#"> <img src="images/banchay7.jpg" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <h5 class="card-title">Hoa Cưới - SunFlower</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                        dignissimos accusantium amet similique velit iste.</p>
+                </div>
+                <div class="mb-3 d-flex justify-content-around">
+                    <h4>999.000đ</h4>
+                    <button class="btn btn btn-dark">Đặt ngay</button>
+                </div>
+               </div>
+    
+            </div>
+           
+            <div class="swiper-button-next fw-bolder" style= "color: rgb(228, 10, 83);"></div>
+            <div class="swiper-button-prev fw-bolder" style= "color: rgb(228, 10, 83);"></div>
+            
+    
+                
+         </div>
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+             <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 300,
+            modifier: 1,
+            slideShadows: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          loop: true ,
+        });
+      </script>
+     </section>
+      <!--LAST SLIDER -->
+
+      <!-- LIEN HE -->
+      <div class="mx-5 mb-5 lien-he">
+        <div class="row border border-0 p-4 border-secondary" style="background-color: rgb(247, 230, 233)">
+            <div class="col-12 col-md-4 text-center border-end border-4">
+                <i class="bi bi-geo-alt fs-4"></i>
+                <b class="fs-5">Address</b>
+                <p class="mt-2">Duy Xuyên - Quảng Nam</p>
+            </div>
+            <div class="col-12 col-md-4 text-center border-end border-4">
+                <i class="bi bi-telephone fs-4"></i>
+                <b class="fs-5">Phone</b>
+                <p class="mt-2">0971 896 381</p>
+            </div>
+            <div class="col-12 col-md-4 text-center">
+                <i class="bi bi-envelope fs-4"></i>
+                <b class="fs-5">E-mail</b>
+                <p class="mt-2">congti1812@gmail.com</p>
+            </div>
+        </div>
+      </div>
+      <!--LAST LIEN HE -->
+
+      <div class=" container-fluid 24h text-center mb-5">
+        <img src="images/hoa-giay-24h'.jpg" alt="" class="mw-100" style="width: 250px;">
+      </div>
+      
+
+   </main>
+   <!--LAST MAIN -->
+
+
+   <!-- FOOTER -->
+   <footer class="bg-success text-white pt-5 pb-4">
+      <div class="container text-md-left">
+
+          <div class="row text-md-left">
+
+              <div class="col-md-5 col-lg-3 col-xl-3 mx-auto mt-3">
+                  <h5 class="mb-4 font-weight-bold text-warning">Sản phẩm</h5>
+                  <p>Hoa giấy handmade đã được biết đến trong suốt thời gian qua như một sản phẩm thủ công tinh tế. Những bông hoa đươc làm giống hoặc gần giống kích thước hoa thật sử dụng trang trí không gian, làm quà tặng</p>
+              </div>
+
+              <div class="col-md-5 col-lg-3 col-xl-2 mx-auto mt-3">
+                  <h5 class="mb-4 font-weight-bold text-warning">Người thực hiện</h5>
+                    <p>
+                        <a href="https://www.facebook.com/congti.tranle.9" class="text-white " style="text-decoration: none;">Trần Lê Công Ti</a>
+                    </p>
+                    <p>
+                        <a href="https://www.facebook.com/profile.php?id=100035125174722" class="text-white " style="text-decoration: none;">Đỗ Hoàng Việt</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-white " style="text-decoration: none;">Name 3</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-white " style="text-decoration: none;">Name 4</a>
+                    </p>
+                </div>
+
+                <div class="col-md-5 col-lg-3 col-xl-2 mx-auto mt-3">
+                    <h5 class="mb-4 font-weight-bold text-warning">Mạng xã hội</h5>
+                    <p>
+                        <a href="https://www.facebook.com/congti.tranle.9" class="text-white " style="text-decoration: none;">Facebook</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-white " style="text-decoration: none;">Instagram</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-white " style="text-decoration: none;">Youtube</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-white " style="text-decoration: none;">HAHA</a>
+                    </p>
+              </div>
+
+              <div class="col-md-5 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="mb-4 font-weight-bold text-warning">Liên hệ</h5>
+                    <p>
+                        <i class="bi bi-house-door-fill"></i>
+                        <i>Duy Xuyên,Quảng Nam</i>
+                    </p>
+                    <p>
+                        <i class="bi bi-envelope-fill"></i>
+                        <i>congti1812@gmail.com</i>
+                    </p>
+                    <p>
+                        <i class="bi bi-telephone-fill"></i>
+                        <i>0971 896 381</i>
+                    </p>
+                    <p>
+                        <i class="bi bi-printer-fill"></i>
+                        <i>038 999 3132</i>
+                    </p>
+             </div>
+
+                <hr class="mb-4">
+
+                <div class="row ">
+
+                  <div class="col-md-7 col-lg-8 text-center">
+                      <p class="mt-1">
+                          Blosom @2023 Thực hiện bởi nhóm: Chưa có tên
+                      </p>
+                  </div>
+
+                  <div class="col-md-5 col-lg-4">
+                      <div class=" text-md-right d-flex justify-content-center">
+                          <ul class="list-unstyled list-inline d-flex ">
+                              <li list-inline-item class="me-5">
+                                  <a href="https://www.facebook.com/congti.tranle.9" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="bi bi-facebook"></i></a>
+                              </li>
+                              <li list-inline-item class="me-5">
+                                  <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="bi bi-youtube"></i></a>
+                              </li>
+                              <li list-inline-item class="me-5">
+                                  <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="bi bi-instagram"></i></a>
+                              </li>
+                              <li list-inline-item class="me-5">
+                                  <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="bi bi-chat-dots-fill"></i></a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+
+                 
+
+
+                </div>
+
+          </div>
+
+      </div>
+   </footer>
+    <!--LAST FOOTER -->
+
+
+
+<!-- VIEW PRODUCT TTSP JS -->
+<script src="./js/trangchu.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    
+
+</body>
+</html>

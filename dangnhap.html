@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+    <title>FLOWER</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+          crossorigin="anonymous">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet"
+          href="css/dangnhap.css">
+    <link rel="stylesheet"
+          href="css/header_footer.css">
+    <link rel="stylesheet"
+          href="css/banner.css">
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success px-4">
+            <div class="container-fluid text-center">
+                <a class="navbar-brand fs-4"
+                   href="#">BLOSOM</a>
+                <div class="mb-2 ms-2 me-2 ic-cart">
+                    <i class="bi bi-bag-dash text-white fs-3 me-4"
+                       data-bs-toggle="modal"
+                       data-bs-target="#exampleModal"
+                       style="color: #fff;"></i>
+                </div>
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse menu "
+                     id="navbarNavDropdown">
+
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active menu1"
+                               href="trangchu.html">TRANG CHỦ</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle"
+                               href="#"
+                               id="dropdownMenuButton"
+                               role="button"
+                               data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                SẢN PHẨM
+                            </a>
+                            <ul class="dropdown-menu bg-success"
+                                aria-labelledby="dropdownMenuButton">
+                                <li><a class="dropdown-item"
+                                       href="sanpham.html">HOA BÓ</a></li>
+                                <li><a class="dropdown-item"
+                                       href="sanpham_hoakhaitruong.html">HOA KHAI TRƯƠNG</a></li>
+                                <li><a class="dropdown-item"
+                                       href="sanpham_hoachiabuon.html">HOA CHIA BUỒN</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active menu1"
+                               href="lienhe.html">LIÊN HỆ</a>
+                        </li>
+                        <li class="nav-item btn-register">
+                            <a class="nav-link active menu1"
+                               href="dangky.html">ĐĂNG KÝ</a>
+                        </li>
+                    </ul>
+                    <a href="dangnhap.html"
+                    class="btn-loginlogin">
+                        <button type="button"
+                                class="btn btn-outline-light ms-1">ĐĂNG NHẬP</button>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- HEADER -->
+
+    <!-- BANNER -->
+    <div class="banner w-100 mb-5 d-flex justify-content-center align-items-center text-center">
+        <div>
+            <h1 class="fs-1">Đăng nhập</h1>
+            <a class="text-white"
+               href="trangchu.html">HOME</a>
+            <span class="ngach"></span>
+            <span class="text">ĐĂNG NHẬP</span>
+        </div>
+    </div>
+    <!-- BANNER -->
+
+    <!-- MAIN -->
+    <main>
+        <form action="">
+            <!----------------------- Main Container -------------------------->
+
+            <div class="container d-flex justify-content-center align-items-center min-vh-100">
+
+                <!----------------------- Login Container -------------------------->
+
+                <div class="row border rounded-5 p-3 bg-white shadow box-area">
+
+                    <!--------------------------- Left Box ----------------------------->
+
+                    <div class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column left-box"
+                         style="background: #1B9C85;">
+                        <div class="featured-image mb-3">
+                            <img src="images/Spring flower-bro.png"
+                                 class="img-fluid"
+                                 style="width: 250px;">
+                        </div>
+                        <p class="text-white fs-2"
+                           style="font-family: 'Courier New', Courier, monospace; font-weight: 600;">BLOSOM</p>
+                        <small class="text-white text-wrap text-center"
+                               style="width: 17rem;font-family: 'Courier New', Courier, monospace;">Welcome to our
+                            flower shop.</small>
+                    </div>
+
+                    <!-------------------- ------ Right Box ---------------------------->
+
+                    <div class="col-md-6 right-box">
+                        <div class="row align-items-center">
+                            <div class="header-text mb-4">
+                                <h2>Đăng nhập</h2>
+                                <p>Chúng tôi rất vui khi có bạn trở lại.</p>
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="email"
+                                       class="form-control form-control-lg bg-light fs-6 email-login"
+                                       placeholder="Địa chỉ Email"
+                                       required>
+                            </div>
+                            <div class="input-group mb-1">
+                                <input type="password"
+                                       class="form-control form-control-lg bg-light fs-6 password-login"
+                                       placeholder="Mật khẩu"
+                                       required>
+                            </div>
+                            <div class="input-group mb-5 d-flex justify-content-between">
+                                <div class="form-check">
+                                    <input type="checkbox"
+                                           class="form-check-input"
+                                           id="formCheck">
+                                    <label for="formCheck"
+                                           class="form-check-label text-secondary"><small>Lưu thông tin</small></label>
+                                </div>
+                                <div class="forgot">
+                                    <small><a href="#">Quên mật khẩu?</a></small>
+                                </div>
+                            </div>
+                            <div class="input-group mb-3">
+                                <button class="btn btn-lg w-100 fs-6 btn-login"
+                                        type="button"
+                                        style="background: #1B9C85; color: aliceblue;">Đăng nhập</button>
+                            </div>
+                            <div class="input-group mb-3">
+                                <button class="btn btn-lg btn-light w-100 fs-6"><img
+                                         src="images/google_logo_icon_169090.png"
+                                         style="width:20px"
+                                         class="me-2"><small>Đăng nhập với Google</small></button>
+                            </div>
+                            <div class="row">
+                                <small>Bạn không có tài khoản? <a href="dangky.html">Đăng ký</a></small>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </form>
+    </main>
+    <!-- MAIN -->
+
+
+    <!-- FOOTER -->
+    <footer class="bg-success text-white pt-5 pb-4">
+        <div class="container text-md-left">
+
+            <div class="row text-md-left">
+
+                <div class="col-md-5 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="mb-4 font-weight-bold text-warning">Sản phẩm</h5>
+                    <p>Hoa giấy handmade đã được biết đến trong suốt thời gian qua như một sản phẩm thủ công tinh tế.
+                        Những bông hoa đươc làm giống hoặc gần giống kích thước hoa thật sử dụng trang trí không gian,
+                        làm quà tặng</p>
+                </div>
+
+                <div class="col-md-5 col-lg-3 col-xl-2 mx-auto mt-3">
+                    <h5 class="mb-4 font-weight-bold text-warning">Người thực hiện</h5>
+                    <p>
+                        <a href="#"
+                           class="text-white "
+                           style="text-decoration: none;">Trần Lê Công Ti</a>
+                    </p>
+                    <p>
+                        <a href="#"
+                           class="text-white "
+                           style="text-decoration: none;">Đỗ Hoàng Việt</a>
+                    </p>
+                    <p>
+                        <a href="#"
+                           class="text-white "
+                           style="text-decoration: none;">Name 3</a>
+                    </p>
+                    <p>
+                        <a href="#"
+                           class="text-white "
+                           style="text-decoration: none;">Name 4</a>
+                    </p>
+                </div>
+
+                <div class="col-md-5 col-lg-3 col-xl-2 mx-auto mt-3">
+                    <h5 class="mb-4 font-weight-bold text-warning">Mạng xã hội</h5>
+                    <p>
+                        <a href="#"
+                           class="text-white "
+                           style="text-decoration: none;">Facebook</a>
+                    </p>
+                    <p>
+                        <a href="#"
+                           class="text-white "
+                           style="text-decoration: none;">Instagram</a>
+                    </p>
+                    <p>
+                        <a href="#"
+                           class="text-white "
+                           style="text-decoration: none;">Youtube</a>
+                    </p>
+                    <p>
+                        <a href="#"
+                           class="text-white "
+                           style="text-decoration: none;">HAHA</a>
+                    </p>
+                </div>
+
+                <div class="col-md-5 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="mb-4 font-weight-bold text-warning">Liên hệ</h5>
+                    <p>
+                        <i class="bi bi-house-door-fill"></i>
+                        <i>Duy Xuyên,Quảng Nam</i>
+                    </p>
+                    <p>
+                        <i class="bi bi-envelope-fill"></i>
+                        <i>congti1812@gmail.com</i>
+                    </p>
+                    <p>
+                        <i class="bi bi-telephone-fill"></i>
+                        <i>0971 896 381</i>
+                    </p>
+                    <p>
+                        <i class="bi bi-printer-fill"></i>
+                        <i>038 999 3132</i>
+                    </p>
+                </div>
+
+                <hr class="mb-4">
+
+                <div class="row ">
+
+                    <div class="col-md-7 col-lg-8 text-center">
+                        <p class="mt-1">
+                            Copyright @2023 Thực hiện bởi nhóm: Chưa có tên
+                        </p>
+                    </div>
+
+                    <div class="col-md-5 col-lg-4">
+                        <div class=" text-md-right d-flex justify-content-center">
+                            <ul class="list-unstyled list-inline d-flex ">
+                                <li list-inline-item
+                                    class="me-5">
+                                    <a href="#"
+                                       class="btn-floating btn-sm text-white"
+                                       style="font-size: 23px;"><i class="bi bi-facebook"></i></a>
+                                </li>
+                                <li list-inline-item
+                                    class="me-5">
+                                    <a href="#"
+                                       class="btn-floating btn-sm text-white"
+                                       style="font-size: 23px;"><i class="bi bi-youtube"></i></a>
+                                </li>
+                                <li list-inline-item
+                                    class="me-5">
+                                    <a href="#"
+                                       class="btn-floating btn-sm text-white"
+                                       style="font-size: 23px;"><i class="bi bi-instagram"></i></a>
+                                </li>
+                                <li list-inline-item
+                                    class="me-5">
+                                    <a href="#"
+                                       class="btn-floating btn-sm text-white"
+                                       style="font-size: 23px;"><i class="bi bi-chat-dots-fill"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+    <!-- FOOTER -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+            crossorigin="anonymous"></script>
+    <script type="module"
+            src="./js/login.js"></script>
+</body>
+
+</html>

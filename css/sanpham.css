@@ -1,0 +1,60 @@
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+  /* remove the gap so it doesn't close */
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+  /* remove the gap so it doesn't close */
+}
+
+.sanphanvjp button{
+    width: 180px;
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 2px solid;
+    color: rgb(131, 6, 6);
+    font-weight: bold;
+}
+.sanphanvjp button:hover{
+    background-color: rgb(170, 58, 58);
+    color: antiquewhite;
+}
+
+.lien-he b{
+    font-family: 'Courgette', cursive;
+    font-weight: 100;
+}
+
+/* VIEW_PRODUCT */
+.js-view_product-container {
+  padding: 20px;
+  color: #000;
+}
+
+/* VIEW_PRODUCT */
+
+.hidden{
+  display: none;
+}
+
+.box-product-cart{
+  display: flex;
+  gap: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e7dcdc;
+}
+
+.img-product img{
+  width: 60px;
+  height: 60px;
+}
+.title-product,
+.price-product,
+.ic-del-cart{
+  color: #000;
+}
+
+
